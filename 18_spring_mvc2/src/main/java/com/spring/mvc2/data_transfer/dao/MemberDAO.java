@@ -1,6 +1,7 @@
 package com.spring.mvc2.data_transfer.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +12,19 @@ import com.spring.mvc2.data_transfer.domain.MemberDTO;
 @Repository
 public class MemberDAO {
 	
-	@Autowired // = @Inject (주최자에 따라 다르나 동일함)
+	@Autowired
 	private SqlSession sqlSession;
-	    //ArrayList 사용해도 상관 없음
-	public List<MemberDTO> selectAllMember() {
+	
+	public void joinMember(MemberDTO memberDTO) {
+		sqlSession.insert("member.insertMemberDTO" , memberDTO);
+	}
+	
+	public void joinMember(Map<String,String> memberMap) {
+		sqlSession.insert("member.insertMemberMap" , memberMap);
+	}
+	
+	
+	public List<MemberDTO> selectAllMember(){
 		return sqlSession.selectList("member.selectAllMember");
 	}
 }

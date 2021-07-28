@@ -39,7 +39,7 @@
 </head>
 <body>
 	<div align="center" style="margin-top: 100px">
-		<form action="transfer1" method="post">  <!-- 2,3,4,5로 변환하여 확인 -->
+		<form action="transfer5" method="post">  <!-- 2,3,4,5로 변환하여 확인 -->
 		<h3>회원가입</h3>
 		<table border="1" style="width:700px">
 			<colgroup>

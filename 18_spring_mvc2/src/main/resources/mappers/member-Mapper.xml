@@ -11,4 +11,47 @@
 		FROM
 				T_MEMBER
 	</select>
+	
+<insert id="insertMemberDTO" parameterType="MemberDTO">
+ 		INSERT INTO 
+ 				T_MEMBER
+ 		VALUES (
+ 			#{id},
+ 			#{pw},
+ 			#{name},
+ 			#{gender},
+ 			#{birthY},
+ 			#{birthM},
+ 			#{birthD},
+ 			#{birthGn},
+ 			#{hp1},
+ 			#{hp2},
+ 			#{hp3},
+ 			#{smsstsYn},
+ 			#{email},
+ 			#{emailstsYn})
+ 	</insert>
+ 	
+ 	<insert id="insertMemberMap" parameterType="Map">
+ 		INSERT INTO 
+ 				T_MEMBER
+ 		VALUES (
+ 			#{id},
+ 			#{pw},
+ 			#{name},
+ 			#{gender},
+ 			#{birthY},
+ 			#{birthM},
+ 			#{birthD},
+ 			#{birthGn},
+ 			#{hp1},
+ 			#{hp2},
+ 			#{hp3},
+ 			#{smsstsYn},
+ 			#{email},
+ 			#{emailstsYn})
+ 	</insert>
+ 	
+ 	
+
 </mapper>
