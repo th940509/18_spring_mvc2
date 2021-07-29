@@ -51,8 +51,12 @@ public class OrderDAO {
 	}
 	
 	// DAO > Mapper전송 예시 2) DTO 클래스 전송
-	
+	public void insertDTO(OrderDTO orderDTO) {
+		sqlSession.insert("order.insertDTO" , orderDTO);
+	}
 		
 	// DAO > Mapper전송 예시 3) Map 데이터 전송
- 
+	public void insertMap(Map<String,String> orderMap) {
+		sqlSession.insert("order.insertMap" , orderMap);
+	}
 }

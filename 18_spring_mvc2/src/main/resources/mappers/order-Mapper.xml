@@ -157,7 +157,7 @@
 		INSERT INTO T_ORDER_LIST (
 				MEMBER_ID,
 				PRODUCT_CODE,
-				PRODUCT_NAME))
+				PRODUCT_NAME)
 		VALUES (
 				#{memberId},
 				#{productCode},
@@ -168,7 +168,7 @@
 		INSERT INTO T_ORDER_LIST (
 				MEMBER_ID,
 				PRODUCT_CODE,
-				PRODUCT_NAME))
+				PRODUCT_NAME)
 		VALUES (
 				#{memberId},
 				#{productCode},
