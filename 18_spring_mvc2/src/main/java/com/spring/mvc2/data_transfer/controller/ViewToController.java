@@ -36,7 +36,6 @@ public class ViewToController {
 	}
 	
 	/* 
-	 * 	
 	 * 	예시 1)  HttpServletRequest
 	 * 
 	 *  HttpServletRequest를 직접 이용하여 getParameter메서드를 이용하여 파라메타의 값에 접근 할 수 있다.

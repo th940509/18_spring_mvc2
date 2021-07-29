@@ -20,7 +20,7 @@ import com.spring.mvc2.data_transfer.dao.MemberDAO;
 public class ControllerToView {
 	
 	@Autowired
-	private MemberDAO memberDAO;
+	private MemberDAO memberDAO;  
 	
 	/*
 	 *  예시 1) Model
